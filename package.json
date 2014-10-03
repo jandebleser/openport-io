@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/iframeskills/openport-test",
   "devDependencies": {
-    "gulp-shell": "^0.2.9"
+    "gulp-shell": "^0.2.9",
+    "gulp-util": "^3.0.1",
+    "lodash": "^2.4.1"
   },
   "dependencies": {
     "gulp-shell": "^0.2.9"

@@ -1,26 +1,26 @@
 var _ = require('lodash')
+var shell = require('gulp-shell');
+var gutil = require('gulp-util')
 
-var PLUGIN_NAME = 'openport'
+var PLUGIN_NAME = 'openport';
 
-function openport( commands, options ) {
-  if (typeof commands === 'string') {
-    commands = [commands]
+function openport( options ) {
+  if (typeof options === 'string') {
+    options = [commands]
   }
 
-  if (!Array.isArray(commands)) {
-    throw new gutil.PluginError(PLUGIN_NAME, 'Missing commands')
+  if (!Array.isArray(options)) {
+    throw new gutil.PluginError(PLUGIN_NAME, 'Please give options as Array - [privatePort, publicPort]');
   }
 
-  options = _.extend({
-    ignoreErrors: false,
-    quiet: false,
-    cwd: process.cwd(),
-    maxBuffer: 16 * 1024 * 1024
-  }, options)
+  shell.task([
+    'given private port is ' + options[0],
+    'given public port is ' + options[1]
+  ]);
 
-  var stream = {}
+  var stream = {};
 
-  return stream
+  return stream;
 }
 
 module.exports = openport
