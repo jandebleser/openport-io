@@ -1,0 +1,31 @@
+{
+  "name": "openport-test",
+  "version": "0.0.1",
+  "description": "npm package to run openport for gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iframeskills/openport-test.git"
+  },
+  "keywords": [
+    "openport",
+    "reverse",
+    "ssh",
+    "free"
+  ],
+  "author": "iframeskills",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iframeskills/openport-test/issues"
+  },
+  "homepage": "https://github.com/iframeskills/openport-test",
+  "devDependencies": {
+    "gulp-shell": "^0.2.9"
+  },
+  "dependencies": {
+    "gulp-shell": "^0.2.9"
+  }
+}
