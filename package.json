@@ -1,6 +1,6 @@
 {
   "name": "openport-test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "npm package to run openport for gulp",
   "main": "index.js",
   "scripts": {
