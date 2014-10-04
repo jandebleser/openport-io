@@ -1,6 +1,6 @@
 {
   "name": "openport-test",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "npm package to run openport for gulp",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,8 @@
     "lodash": "^2.4.1"
   },
   "dependencies": {
-    "gulp-shell": "^0.2.9"
+    "gulp-shell": "^0.2.9",
+    "gulp-util": "^3.0.1",
+    "lodash": "^2.4.1"
   }
 }
